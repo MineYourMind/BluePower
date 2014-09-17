@@ -59,8 +59,8 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(BPBlocks.basalt_tile), BPBlocks.basalt_paver);
         GameRegistry.addShapelessRecipe(new ItemStack(BPBlocks.marble_paver), BPBlocks.marble_tile);
         GameRegistry.addShapelessRecipe(new ItemStack(BPBlocks.marble_tile), BPBlocks.marble_paver);
-        GameRegistry.addShapedRecipe(new ItemStack(BPBlocks.gravel_slab, 1), "###", '#', Blocks.gravel);
-        GameRegistry.addShapedRecipe(new ItemStack(BPBlocks.sand_slab, 1), "###", '#', Blocks.sand);
+        GameRegistry.addShapedRecipe(new ItemStack(BPBlocks.gravel_slab, 6), "###", '#', Blocks.gravel);
+        GameRegistry.addShapedRecipe(new ItemStack(BPBlocks.sand_slab, 6), "###", '#', Blocks.sand);
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.basalt_brick, 4), "##", "##", '#', BPBlocks.basalt));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.marble_brick, 4), "##", "##", '#', BPBlocks.marble));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BPBlocks.copper_block, 1), "###", "###", "###", '#', "ingotCopper"));
