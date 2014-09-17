@@ -17,6 +17,7 @@
 
 package com.bluepowermod.init;
 
+import com.bluepowermod.blocks.BlockSlab;
 import com.bluepowermod.blocks.worldgen.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -63,6 +64,10 @@ public class BPBlocks {
     public static final Block basalt_brick        = new BlockStoneOre(Refs.BASALTBRICK_NAME);
     public static final Block marble_brick        = new BlockStoneOre(Refs.MARBLEBRICK_NAME);
     public static final Block cracked_basalt_lava = new BlockCrackedBasalt(Refs.CRACKED_BASALT);
+    public static final Block gravel_slab         = new BlockSlab(false, Material.rock).setBlockTextureName("minecraft:gravel");
+    public static final Block sand_slab           = new BlockSlab(false, Material.sand).setBlockTextureName("minecraft:sand");
+    public static final Block double_gravel_slab  = new BlockSlab(true, Material.rock).setBlockTextureName("minecraft:gravel");
+    public static final Block double_sand_slab    = new BlockSlab(true, Material.sand).setBlockTextureName("minecraft:sand");
     
     public static final Block basaltbrick_cracked = new BlockStoneOre(Refs.CRACKEDBASALTBRICK_NAME);
     public static final Block basalt_brick_small  = new BlockStoneOre(Refs.SMALLBASALTBRICK_NAME);
@@ -154,6 +159,10 @@ public class BPBlocks {
         GameRegistry.registerBlock(cracked_basalt_lava, Refs.CRACKED_BASALT);
         GameRegistry.registerBlock(basalt_tile, Refs.BASALTTILE_NAME);
         GameRegistry.registerBlock(basalt_paver, Refs.BASALTPAVER_NAME);
+        GameRegistry.registerBlock(gravel_slab, Refs.GRAVELSLAB_NAME);
+        GameRegistry.registerBlock(sand_slab, Refs.SANDSLAB_NAME);
+        GameRegistry.registerBlock(double_gravel_slab, Refs.DOUBLEGRAVELSLAB_NAME);
+        GameRegistry.registerBlock(double_sand_slab, Refs.DOUBLESANDSLAB_NAME);
         
         GameRegistry.registerBlock(marble, Refs.MARBLE_NAME);
         GameRegistry.registerBlock(marble_brick, Refs.MARBLEBRICK_NAME);
